@@ -1,16 +1,20 @@
  <md-sidenav-layout [class.m2app-dark]="isDarkTheme">
   <md-sidenav #sidenav mode="side" class="app-sidenav">
-    Sidenav 1234123131
+   <ul class="list-group">
+  <li class="list-group-item"><a routerLink="map">Map</a></li>
+  <li class="list-group-item"><a routerLink="nocontent">No content</a></li>
+  <li class="list-group-item"><a routerLink="map">Map</a></li>
+  
+</ul>
   </md-sidenav>
   <md-toolbar color="primary">
     <button class="app-icon-button" (click)="sidenav.toggle()">
       <i class="material-icons app-toolbar-menu">menu</i>
     </button>
 
-    Angular Material2 Example App
+    FoodMap
 
     <span class="app-toolbar-filler"></span>
-    <button md-button (click)="isDarkTheme = !isDarkTheme">TOGGLE DARK THEME</button>
   </md-toolbar>
 
   <div class="app-content">
@@ -18,7 +22,3 @@
   </div>
 
 </md-sidenav-layout>
-
-<span class="app-action" [class.m2app-dark]="isDarkTheme">
-  <button md-fab><md-icon>check circle</md-icon></button>
-</span>

@@ -10,13 +10,14 @@ import { ROUTES } from './app.routes';
 import { AppComponent } from './app.component';
 import { GlobalService } from './global.service';
 import { LayoutComponent } from './layout';
-import { AboutComponent } from './about';
+import { NoContentComponent } from './no-content';
 
 @NgModule({
     bootstrap: [AppComponent],
     declarations: [
         AppComponent,
-        LayoutComponent
+        LayoutComponent,
+        NoContentComponent
     ],
     imports: [
         BrowserModule,
