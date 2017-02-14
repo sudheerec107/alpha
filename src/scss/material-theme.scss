@@ -1,5 +1,7 @@
 @import '../../node_modules/@angular/material/core/theming/all-theme';
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+$fa-font-path: "../assets/fonts";
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
 
 // NOTE: Theming is currently experimental and not yet publically released!
 md-sidenav-layout.m2app-dark {
@@ -161,4 +163,37 @@ $theme: md-light-theme($primary, $accent);
   $dark-theme: md-dark-theme($dark-primary, $dark-accent, $dark-warn);
 
   @include angular-material-theme($dark-theme);
+}
+
+md-sidenav {
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #00bcd4;
+  }
+a, a:hover, a:active {
+  text-decoration:none;
+  color: #fff;
+}
+  li a {
+      display: block;
+      color: #fff;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(45, 45, 45, 0.26);
+  } 
+
+  li a.active-link {
+    color: #000;
+    text-decoration:none;
+  }
+
+  li a:hover:not(.active) {
+      background-color: #00a7bd;
+      color: white;
+  }
+
+  background-color: #00bcd4;
 }

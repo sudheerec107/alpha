@@ -162,6 +162,8 @@ module.exports = function (options) {
          * Returns compiled css content as string
          *
          */
+            
+        { test: /(\.eot|\.svg|\.ttf|\.woff|\.woff2)/, loader: 'file-loader?name=fonts/[name].[ext]' },
         {
           test: /\.scss$/,
           use: ['to-string-loader', 'css-loader', 'sass-loader'],

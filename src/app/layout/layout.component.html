@@ -1,11 +1,18 @@
  <md-sidenav-layout [class.m2app-dark]="isDarkTheme">
   <md-sidenav #sidenav mode="side" class="app-sidenav">
-   <ul class="list-group">
+  <header style="height: 50px; border-bottom: 1px solid rgba(45, 45, 45, 0.26);color: #fff;"><i class="fa fa-2x fa-cutlery" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;</i><a routerLink="map">Logo</a></header>
+  <ul>
+  <li><a routerLink="map" routerLinkActive="active-link"><i class="fa fa-1x fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Map</a></li>
+  <li><a routerLink="nocontent" routerLinkActive="active-link">No content</a></li>
+  <li><a href="#contact" routerLinkActive="active-link">Contact</a></li>
+  <li><a href="#about" routerLinkActive="active-link">About</a></li>
+</ul>
+  <!--  <ul class="list-group">
   <li class="list-group-item"><a routerLink="map">Map</a></li>
   <li class="list-group-item"><a routerLink="nocontent">No content</a></li>
   <li class="list-group-item"><a routerLink="map">Map</a></li>
   
-</ul>
+</ul> -->
   </md-sidenav>
   <md-toolbar color="primary">
     <button class="app-icon-button" (click)="sidenav.toggle()">
@@ -19,6 +26,8 @@
 
   <div class="app-content">
     <router-outlet></router-outlet>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </div>
 
 </md-sidenav-layout>
+
