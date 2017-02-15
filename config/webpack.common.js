@@ -4,6 +4,7 @@
 
 const webpack = require('webpack');
 const helpers = require('./helpers');
+var ProvidePlugin = require('webpack/lib/ProvidePlugin');
 
 /*
  * Webpack Plugins
@@ -204,12 +205,13 @@ module.exports = function (options) {
         prettyPrint: true
       }),
 
-      /*
-       * Plugin: ForkCheckerPlugin
-       * Description: Do type checking in a separate process, so webpack don't need to wait.
-       *
-       * See: https://github.com/s-panferov/awesome-typescript-loader#forkchecker-boolean-defaultfalse
-       */
+      new ProvidePlugin({
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery',
+        $: 'jquery',
+        'window.Tether': 'tether'
+      }),    
+
       new CheckerPlugin(),
       /*
        * Plugin: CommonsChunkPlugin

@@ -22,6 +22,19 @@
     FoodMap
 
     <span class="app-toolbar-filler"></span>
+    <button md-icon-button [mdMenuTriggerFor]="menu">
+  <md-icon>more_vert</md-icon>
+</button>
+    <md-menu #menu="mdMenu">
+      <button md-menu-item>
+        <md-icon><i class="fa fa-user" aria-hidden="true"></i></md-icon>
+        <span>User Name</span>
+      </button>
+      <button md-menu-item>
+        <md-icon><i class="fa fa-sign-out" aria-hidden="true"></i></md-icon>
+        <span>Logout</span>
+      </button>
+    </md-menu>
   </md-toolbar>
 
   <div class="app-content">

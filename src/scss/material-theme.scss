@@ -186,13 +186,13 @@ a, a:hover, a:active {
   } 
 
   li a.active-link {
-    color: #000;
+    color: #ffd740;
     text-decoration:none;
   }
 
   li a:hover:not(.active) {
       background-color: #00a7bd;
-      color: white;
+      color: #ffd740;
   }
 
   background-color: #00bcd4;
