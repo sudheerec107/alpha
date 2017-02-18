@@ -209,7 +209,9 @@ module.exports = function (options) {
         jQuery: 'jquery',
         'window.jQuery': 'jquery',
         $: 'jquery',
-        'window.Tether': 'tether'
+        'window.Tether': 'tether',
+         tether: 'tether',
+        Tether: 'tether'
       }),    
 
       new CheckerPlugin(),

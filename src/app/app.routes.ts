@@ -12,5 +12,6 @@ export const ROUTES: Routes = [
             { path: '**', redirectTo: 'map', pathMatch: 'full' },
         ]
     },
+    {path: 'login', loadChildren: './login#LoginModule' },
     { path: '**', redirectTo: '/app', pathMatch: 'full' }
 ];
