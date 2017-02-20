@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { GlobalService } from './global.service';
 import { LayoutComponent } from './layout';
 import { NoContentComponent } from './no-content';
+import { CanActivateGuard } from './can.activate.guard';
 
 @NgModule({
     bootstrap: [AppComponent],
@@ -28,6 +29,7 @@ import { NoContentComponent } from './no-content';
     ],
     providers: [
         ENV_PROVIDERS,
+        CanActivateGuard,
         GlobalService
     ]
 })

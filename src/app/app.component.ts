@@ -4,7 +4,7 @@ declare var $;
 @Component({
     selector: 'app',
     encapsulation: ViewEncapsulation.None,
-    styles: [require('../scss/material-theme.scss')],
+    styles: [require('../scss/application.scss')],
     template: require('./app.component.html')
 })
 

@@ -1,0 +1,32 @@
+md-sidenav {
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #00bcd4;
+  }
+a, a:hover, a:active {
+  text-decoration:none;
+  color: #fff;
+}
+  li a {
+      display: block;
+      color: #fff;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(45, 45, 45, 0.26);
+  } 
+
+  li a.active-link {
+    color: #ffd740;
+    text-decoration:none;
+  }
+
+  li a:hover:not(.active) {
+      background-color: #00a7bd;
+      color: #ffd740;
+  }
+
+  background-color: #00bcd4;
+}
