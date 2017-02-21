@@ -15,5 +15,5 @@ export const ROUTES: Routes = [
         canActivate: [CanActivateGuard]
     },
     {path: 'login', loadChildren: './login#LoginModule' },
-    { path: '**', redirectTo: '/app', pathMatch: 'full' }
+    { path: '**', redirectTo: '/app/map', pathMatch: 'full' }
 ];

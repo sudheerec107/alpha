@@ -5,6 +5,9 @@ import { RouterModule } from '@angular/router';
 import { MapService } from './map.service';
 import { routes } from './map.routes';
 import { MapComponent } from './map.component';
+import {
+  AgmCoreModule
+} from 'angular2-google-maps/core';
 
 @NgModule({
     declarations: [
@@ -14,6 +17,7 @@ import { MapComponent } from './map.component';
         CommonModule,
         FormsModule,
         RouterModule.forChild(routes),
+        AgmCoreModule.forRoot()
     ],
     providers: [
         MapService
