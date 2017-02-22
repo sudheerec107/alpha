@@ -6,12 +6,13 @@ import { MapService } from './map.service';
 import { routes } from './map.routes';
 import { MapComponent } from './map.component';
 import {
-  AgmCoreModule
+    AgmCoreModule
 } from 'angular2-google-maps/core';
+import { GoogleMapDirective } from './gmap.directive';
 
 @NgModule({
     declarations: [
-        MapComponent,
+        MapComponent, GoogleMapDirective
     ],
     imports: [
         CommonModule,

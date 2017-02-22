@@ -4,6 +4,12 @@ $fa-font-path: "../assets/fonts";
 
 @import 'material';
 @import 'sidenavbar';
+@import 'login';
+
+
+html,body {
+  height: 100%;
+}
 
 md-sidenav-layout.m2app-dark {
   background: black;
@@ -84,5 +90,5 @@ md-sidenav {
 
 
 .sebm-google-map-container {
-    height: 300px;
+    height: 400px;
 }
