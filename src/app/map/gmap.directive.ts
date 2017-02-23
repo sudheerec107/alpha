@@ -2,6 +2,7 @@ import { Directive } from '@angular/core';
 import { GoogleMapsAPIWrapper } from 'angular2-google-maps/core';
 import { Marker } from './Marker';
 import { GlobalService } from '../global.service';
+// import * as Marker1 from 'map-icons';
 declare var google;
 
 @Directive({
@@ -36,7 +37,16 @@ export class GoogleMapDirective {
                     lat: item.lat,
                     lng: item.lng,
                 },
-                label: item.label
+                icon: {
+                    path: 'M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,' +
+                          '-22 2,-20 0,0 z M -2,-30 a 2,2 0 1,1 4,0 2,2 0 1,1 -4,0',
+                    fillColor: '#00CCBB',
+                    fillOpacity: 1,
+                    strokeColor: '',
+                    strokeWeight: 0
+                },
+                label: item.label,
+                // labelOrigin: new google.maps.Point(0,-122)
             });
 
             google.maps.event.addListener(singleMarker, 'click', () => {
