@@ -10,15 +10,17 @@ import { ROUTES } from './app.routes';
 import { AppComponent } from './app.component';
 import { GlobalService } from './global.service';
 import { LayoutComponent } from './layout';
-import { NoContentComponent } from './no-content';
+import { VendorComponent } from './vendor';
 import { CanActivateGuard } from './can.activate.guard';
+import { ItemComponent } from './vendor/item.component';
 
 @NgModule({
     bootstrap: [AppComponent],
     declarations: [
         AppComponent,
         LayoutComponent,
-        NoContentComponent
+        VendorComponent,
+        ItemComponent
     ],
     imports: [
         BrowserModule,

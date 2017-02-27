@@ -1,0 +1,89 @@
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+.imgCont > img{
+  height: 250px;  
+}
+.imgBase{
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+
+  z-index: 1;
+  text-align: center;
+  background-color: #333;
+  border-radius: 5px;
+  color: #ebe8de;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline-block;
+  cursor: pointer;
+  
+}
+.buyItem:hover{
+ background-color: #00bcd4
+}
+.imgHead {
+    top: 50px;
+}
+
+.imgBot{
+    bottom: 50px;
+}
+.itemContainer {
+  text-align: center;
+}
+
+#header{
+    min-height: 40px;
+    height: 10%;
+    max-height: 150px;
+    background-color: #333;
+    border-radius: 5px;
+    color: #ebe8de;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: left;
+}
+#cart{
+  position: absolute;
+  right: 60px;
+  top: 10px;
+  padding: 0px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 5px;
+  }
+#cart > img{
+      max-width: 100%;
+      max-height: 100%;
+      float: right;
+}
+
+.itemDesc{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.90;
+    z-index: 2;
+    color: #FFFFFF;
+}
+
+.itemDesc > .disc{
+    padding: 10%;
+    margin-top: 10%;
+}
+.closeDesc{
+  cursor: pointer;
+  float: right;
+  padding-right: 10px;
+}

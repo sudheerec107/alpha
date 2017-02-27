@@ -1,0 +1,11 @@
+<!--<div id="header"> L'ORANGE 
+     </div>-->
+<div id="cart"> <i class="material-icons">add_shopping_cart</i> </div>
+     
+<div class="owl-carousel owl-theme" >
+    
+    <div *ngFor="let crItem of items" class="item">
+        <ui-item [item]="crItem"> </ui-item>
+    </div>
+ 
+</div>

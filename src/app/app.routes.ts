@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { LayoutComponent } from './layout';
-import { NoContentComponent } from './no-content';
+import { VendorComponent } from './vendor';
 import { CanActivateGuard } from './can.activate.guard';
 
 export const ROUTES: Routes = [
@@ -9,7 +9,7 @@ export const ROUTES: Routes = [
         children: [
             { path: 'map', loadChildren: './map#MapModule' },
             { path: 'dines', loadChildren: './dine#DineModule' },
-            { path: 'nocontent', component: NoContentComponent },
+            { path: 'vendor', component: VendorComponent },
 
             { path: '**', redirectTo: 'map', pathMatch: 'full' },
         ],
