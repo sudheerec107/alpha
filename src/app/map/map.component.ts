@@ -4,7 +4,7 @@ import {
 } from '@angular/core';
 
 @Component({
-    selector: 'about',
+    selector: 'map',
     styles: [`
   `],
     template: require('./map.component.html')

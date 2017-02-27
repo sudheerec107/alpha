@@ -8,6 +8,7 @@ export const ROUTES: Routes = [
         path: 'app', component: LayoutComponent,
         children: [
             { path: 'map', loadChildren: './map#MapModule' },
+            { path: 'dines', loadChildren: './dine#DineModule' },
             { path: 'nocontent', component: NoContentComponent },
 
             { path: '**', redirectTo: 'map', pathMatch: 'full' },

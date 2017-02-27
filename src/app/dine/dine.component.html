@@ -1,0 +1,8 @@
+<h4>Dine</h4>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-6" *ngFor="let item of _dineService.nearbyDines">
+    <single-dine [dine]="item"></single-dine>
+    </div>
+  </div>
+</div>
