@@ -2,8 +2,8 @@ import { Component, Input } from '@angular/core';
 import { ItemData } from './item-data';
 
 @Component({
-    selector:'ui-item',
-    template:`
+    selector: 'ui-item',
+    template: `
     <div class="itemContainer simpleCart_shelfItem" *ngIf="item">
         <div *ngIf="showDescScreen" class="itemDesc"><div class="closeDesc" (click)="showDesc(false)"> X </div> 
             <div class="disc"> {{item.description}}</div>
@@ -17,12 +17,12 @@ import { ItemData } from './item-data';
 `
 })
 
-export class ItemComponent{
+export class ItemComponent {
     @Input() item: ItemData;
-    showDescScreen:boolean = false;
+    showDescScreen: boolean = false;
 
-    showDesc(flag:boolean):void{
-       this.showDescScreen = flag;
+    showDesc(flag: boolean): void {
+        this.showDescScreen = flag;
     }
 
 }

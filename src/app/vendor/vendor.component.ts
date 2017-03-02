@@ -7,21 +7,21 @@ require('assets/owl-carousel/owl.carousel.min.js');
 require('assets/simple-cart/simpleCart.min.js');
 
 @Component({
-  selector: 'vendor',
+    selector: 'vendor',
     styles: [require('assets/owl-carousel/assets/owl.carousel.min.css'), require('assets/owl-carousel/assets/owl.theme.default.min.css'), require('./vendor.css')],
     template: require('./carousel.html'),
     encapsulation: ViewEncapsulation.None,
-    providers:[ItemService]
+    providers: [ItemService]
 })
-export class VendorComponent implements OnInit{
+export class VendorComponent implements OnInit {
     items: ItemData[];
- 
-  getItemList():void{
-    this.itemService.getItems().then(items => this.items = items);
-  }
-  ngOnInit(): void {
-    this.getItemList();
-  }
+
+    getItemList(): void {
+        this.itemService.getItems().then(items => this.items = items);
+    }
+    ngOnInit(): void {
+        this.getItemList();
+    }
     name = 'Angular';
     constructor(private itemService: ItemService) {
         $(document).ready(function () {
