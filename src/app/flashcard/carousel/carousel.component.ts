@@ -14,6 +14,20 @@ require('../../../assets/owl-carousel/owl.carousel.min.js');
     encapsulation: ViewEncapsulation.None,
 })
 export class CarouselComponent {
+    private records = [
+        {
+            ques: "India",
+            ans: "Delhi"
+        },
+        {
+            ques: "China",
+            ans: "Beijing"
+        },
+        {
+            ques: "United States of America",
+            ans: "Washington, D.C."
+        }
+    ];
     constructor() {
         $(document).ready(function () {
             $('.owl-carousel').owlCarousel({

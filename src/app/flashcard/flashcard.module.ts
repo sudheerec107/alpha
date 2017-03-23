@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { routes } from './flashcard.router';
 import { CarouselComponent } from './carousel/carousel.component';
+import { FlipComponent } from './flipcard/flipcard.component';
 import { MaterialModule } from '@angular/material';
 
 @NgModule({
     declarations: [
-        CarouselComponent
+        CarouselComponent,
+        FlipComponent
     ],
     imports: [
         CommonModule,
