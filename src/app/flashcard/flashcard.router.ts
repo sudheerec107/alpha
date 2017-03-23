@@ -1,5 +1,5 @@
-import { FlipComponent } from './flipcard/flipcard.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 export const routes = [
-  { path: '', component: FlipComponent }
+  { path: '', component: CarouselComponent }
 ];

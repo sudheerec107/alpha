@@ -9,12 +9,11 @@ export const ROUTES: Routes = [
         children: [
             { path: 'map', loadChildren: './map#MapModule' },
             { path: 'dines', loadChildren: './dine#DineModule' },
+            { path: 'flash', loadChildren: './flashcard#FlashcardModule' },
             { path: 'vendor', component: VendorComponent },
-
             { path: '**', redirectTo: 'map', pathMatch: 'full' },
         ],
         canActivate: [CanActivateGuard]
     },
-    {path: 'login', loadChildren: './login#LoginModule' },
-    { path: '**', redirectTo: '/app/map', pathMatch: 'full' }
+    { path: 'login', loadChildren: './login#LoginModule' }
 ];

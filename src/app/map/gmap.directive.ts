@@ -29,6 +29,7 @@ export class GoogleMapDirective {
         return new google.maps.Point((worldPoint.x - bottomLeft.x) * scale,
             (worldPoint.y - topRight.y) * scale);
     }
+    
 
     public initMarkers() {
         let result = [];
@@ -46,7 +47,7 @@ export class GoogleMapDirective {
                     strokeColor: '',
                     strokeWeight: 0
                 },
-               map_icon_label: '<span class="map-icon map-icon-grocery-or-supermarket"></span>'
+                map_icon_label: '<span class="map-icon map-icon-grocery-or-supermarket"></span>'
                 // labelOrigin: new google.maps.Point(0,-122)
             });
 
@@ -57,4 +58,5 @@ export class GoogleMapDirective {
             singleMarker.setMap(this.map);
         }
     }
+    
 }

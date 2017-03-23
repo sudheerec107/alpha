@@ -8,8 +8,8 @@ require('assets/simple-cart/simpleCart.min.js');
 
 @Component({
     selector: 'vendor',
-    styles: [require('assets/owl-carousel/assets/owl.carousel.min.css'), require('assets/owl-carousel/assets/owl.theme.default.min.css'), require('./vendor.css')],
-    template: require('./carousel.html'),
+    styleUrls: ['./vendor.css'],
+    templateUrl: './carousel.html',
     encapsulation: ViewEncapsulation.None,
     providers: [ItemService]
 })

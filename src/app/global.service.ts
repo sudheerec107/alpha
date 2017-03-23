@@ -5,22 +5,24 @@ import { Marker } from './map/Marker';
 export class GlobalService {
     public markers: Marker[] = [
         {
-            lat: 51.673858,
-            lng: 7.815982,
+            lat: 12.96,
+            lng: 77.690,
             label: 'A',
             draggable: true
         },
         {
-            lat: 51.373858,
-            lng: 7.215982,
+            lat: 12.965,
+            lng: 77.685,
             label: 'B',
             draggable: false
         },
         {
-            lat: 51.723858,
-            lng: 7.895982,
+            lat: 12.9657,
+            lng: 77.68,
             label: 'C',
             draggable: true
         }
     ];
 }
+
+
